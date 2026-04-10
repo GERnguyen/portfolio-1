@@ -11,6 +11,7 @@ import mock09 from "../assets/images/mock09.png";
 import mock10 from "../assets/images/mock10.png";
 import discord from "../assets/images/discord.gif";
 import lumina from "../assets/images/lumina.png";
+import kaibi from "../assets/images/kaibi.png";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -157,6 +158,45 @@ function Project() {
               target="_blank"
               rel="noreferrer"
               aria-label="CoCoCord GitHub repository"
+            >
+              <GitHubIcon />
+              <span className="github-label">{`Github`}</span>
+            </a>
+          </div>
+        </div>
+        <div className="project">
+          <a
+            href="https://github.com/GERnguyen/kaibi-backend-server-from-scratch"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={kaibi} className="zoom" alt="thumbnail" width="100%" />
+          </a>
+          <a
+            href="https://github.com/GERnguyen/kaibi-backend-server-from-scratch"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>Kaibi : Backend Server from Scratch</h2>
+          </a>
+          <p>
+            Kaibi is a lightweight, low-level web framework built entirely from
+            scratch using Python, without relying on any third-party web
+            libraries. The project serves as a deep dive into the internals of
+            the HTTP protocol, simulating the complete lifecycle of a web
+            request. From managing raw TCP socket connections to parsing headers
+            and delivering static assets, Kaibi demonstrates a fundamental
+            understanding of how modern web servers operate under the hood.{" "}
+            <br />
+            Tech used: Python, socket, threading, TCP/IP, HTTP protocol
+          </p>
+          <div className="project-actions">
+            <a
+              className="github-link"
+              href="https://github.com/GERnguyen/kaibi-backend-server-from-scratch"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="kaibi GitHub repository"
             >
               <GitHubIcon />
               <span className="github-label">{`Github`}</span>
