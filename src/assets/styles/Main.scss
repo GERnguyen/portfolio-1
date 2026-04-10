@@ -1,0 +1,228 @@
+.dark-mode .about-section {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0px 15%;
+  min-height: 700px;
+  background-image: url("../images/bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.about-section .content {
+  text-align: left;
+  z-index: 2;
+
+  .main-meta {
+    margin-top: 16px;
+
+    p {
+      font-size: 1.1em;
+      margin: 6px 0;
+    }
+
+    a {
+      color: #9fd3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .social_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+
+    svg {
+      font-size: 1.8em;
+    }
+  }
+
+  .mobile_social_icons {
+    display: none;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  h1 {
+    font-size: 5em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+}
+
+.about-section .image-wrapper {
+  z-index: 2;
+  img {
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+.about p {
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.awards-section {
+  width: 100%;
+  padding: 70px 15%;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 30, 0.98) 0%,
+    rgba(16, 16, 24, 0.98) 100%
+  );
+
+  h2 {
+    margin: 0 0 24px;
+    font-size: 2.2em;
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .award-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 16px;
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.05em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.98em;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen {
+  @media (max-width: 567px) {
+    .nav-left {
+      padding-top: 20px;
+      float: left;
+    }
+
+    .nav-left img {
+      height: 35px;
+    }
+
+    .nav-right {
+      float: right;
+    }
+
+    .nav-right li {
+      padding: 10px 15px;
+      list-style: none;
+      font-size: 13px;
+      color: white;
+      width: 10%;
+    }
+
+    .nav-right ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    .about {
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-section h1 {
+      font-size: 4em !important;
+      text-align: left;
+    }
+
+    .about-section p {
+      text-align: left;
+    }
+
+    .container {
+      display: initial;
+    }
+
+    .social_icons {
+      display: none !important;
+    }
+
+    .mobile_social_icons {
+      padding-top: 10px;
+      display: flex !important;
+      flex-direction: row;
+      gap: 10px;
+      color: white;
+
+      svg {
+        font-size: 1.8em;
+      }
+    }
+
+    .about-section {
+      padding-top: 150px;
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .about-section .content {
+      width: 90%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 5%;
+
+      .main-meta p {
+        font-size: 1em;
+      }
+    }
+
+    .about-section .image-wrapper {
+      padding-left: 5%;
+      width: 100%;
+    }
+
+    .awards-section {
+      padding: 50px 5%;
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      .awards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
